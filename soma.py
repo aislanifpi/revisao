@@ -1,9 +1,5 @@
-def somar_numeros(numeros):
-    resultado = 0
-    for numero in numeros:
-        resultado += numero
-    return resultado
+from typing import List
 
-numeros = [1, 2, 3, 4, 5]
-soma = somar_numeros(numeros)
-print(soma)
+def somar_numeros(numeros: List[int]) -> int:
+    return sum(numeros)
+assert somar_numeros([1, 2, 3]) == 6
